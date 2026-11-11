@@ -1,6 +1,6 @@
 # SmartStock - Inventory, Sales & Business Management System
 
-Stack (strict): **HTML + CSS, Python 3 (standard library only), SQL (SQLite)**. No JavaScript, no pip installs.
+Stack : **HTML + CSS, Python 3 (standard library only), SQL (SQLite)**. .
 
 ## Run
 ```
