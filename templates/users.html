@@ -1,0 +1,12 @@
+<div class="card">
+  <h3>Add user</h3>
+  <form method="post" action="/users/new" class="form">
+    {{tok}}
+    <label>Username <input name="username" type="text" required></label>
+    <label>Full name <input name="full_name" type="text" required></label>
+    <label>Role <select name="role"><option value="staff" selected>Staff</option><option value="admin">Admin</option></select></label>
+    <label>Password (min 8) <input name="password" type="password" required></label>
+    <div><button class="btn">Create</button></div>
+  </form>
+</div>
+<div class="card">{{table}}</div>

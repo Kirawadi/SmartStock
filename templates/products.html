@@ -1,0 +1,12 @@
+<div class="bar-actions">
+  <form method="get">
+    <input name="q" type="text" value="{{q}}" placeholder="Search name / SKU">
+    <button class="btn sec">Search</button>
+    <a class="btn sec" href="/products?low=1">Low stock</a>
+  </form>
+  <div>
+    <a class="btn sec" href="/export/products.csv">Export CSV</a>
+    <a class="btn" href="/products/new">+ New product</a>
+  </div>
+</div>
+<div class="card">{{table}}</div>

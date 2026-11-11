@@ -1,0 +1,14 @@
+<div class="card">
+  <p><b>{{name}}</b> &middot; {{sku}} &middot; {{category}} &middot; Supplier: {{supplier}}<br>
+  Qty: <b>{{qty}}</b> {{status}} &middot; Cost {{cost}} &middot; Price {{price}}</p>
+</div>
+<div class="card">
+  <h3>Adjust stock</h3>
+  <form method="post" action="/products/{{pid}}/adjust" class="form">
+    {{tok}}
+    <label>Adjustment (+/-) <input name="change" type="number" required></label>
+    <label>Reason <input name="reason" type="text" placeholder="Damaged / Recount" required></label>
+    <div><button class="btn">Adjust stock</button></div>
+  </form>
+</div>
+<div class="card"><h3>Stock history</h3>{{history}}</div>

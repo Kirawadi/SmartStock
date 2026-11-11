@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login - SmartStock</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="login card">
+    <h2>SmartStock</h2>
+    <p class="mut">Inventory, Sales &amp; Business Management</p>
+    {{msg}}
+    <form method="post" action="/login">
+      <label>Username <input name="username" type="text" required autofocus></label>
+      <label>Password <input name="password" type="password" required></label>
+      <button class="btn">Sign in</button>
+    </form>
+  </div>
+</body>
+</html>

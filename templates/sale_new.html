@@ -1,0 +1,14 @@
+<div class="card">
+  <form method="post" action="/sales/new">
+    {{tok}}
+    <div class="form">
+      <label>Customer <select name="customer_id">{{customers}}</select></label>
+      <label>Discount (amount) <input name="discount" type="number" value="0" min="0" step="0.01"></label>
+    </div>
+    <table>
+      <thead><tr><th>Product</th><th>Quantity</th></tr></thead>
+      <tbody>{{rows}}</tbody>
+    </table>
+    <p><button class="btn">Complete sale</button></p>
+  </form>
+</div>

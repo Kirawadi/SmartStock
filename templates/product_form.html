@@ -1,0 +1,14 @@
+<div class="card">
+  <form method="post" action="{{action}}" class="form">
+    {{tok}}
+    <label>SKU <input name="sku" type="text" value="{{sku}}" required></label>
+    <label>Product name <input name="name" type="text" value="{{name}}" required></label>
+    <label>Category <select name="category_id">{{categories}}</select></label>
+    <label>Supplier <select name="supplier_id">{{suppliers}}</select></label>
+    <label>Cost price <input name="cost" type="number" value="{{cost}}" min="0" step="0.01" required></label>
+    <label>Selling price <input name="price" type="number" value="{{price}}" min="0" step="0.01" required></label>
+    {{qty_field}}
+    <label>Reorder level <input name="reorder_level" type="number" value="{{reorder}}" min="0" required></label>
+    <div><button class="btn">Save product</button> <a class="btn sec" href="/products">Cancel</a></div>
+  </form>
+</div>

@@ -1,0 +1,11 @@
+<div class="card">
+  <form method="post" action="/purchases/new">
+    {{tok}}
+    <label>Supplier <select name="supplier_id" required>{{suppliers}}</select></label>
+    <table>
+      <thead><tr><th>Product</th><th>Quantity</th><th>Unit cost (blank = current cost)</th></tr></thead>
+      <tbody>{{rows}}</tbody>
+    </table>
+    <p><button class="btn">Record purchase</button></p>
+  </form>
+</div>
